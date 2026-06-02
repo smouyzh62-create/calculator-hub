@@ -9,7 +9,7 @@ const navItems = [
   { label: 'Marketing', path: '/seo', icon: '\uD83D\uDCCA' },
 ];
 
-interface Props { theme: string; toggleTheme: () => void; }
+interface Props { theme: string; toggleTheme: () => void; locale: string; toggleLocale: () => void; }
 
 export default function Navbar({ theme, toggleTheme }: Props) {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -50,6 +50,15 @@ export default function Navbar({ theme, toggleTheme }: Props) {
               className="w-9 h-9 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-center transition-colors"
               aria-label="Toggle theme">
               {theme === 'dark' ? <Sun className="w-4 h-4 text-amber-500" /> : <Moon className="w-4 h-4 text-indigo-500" />}
+            </button>
+            <button onClick={toggleLocale}
+              className="relative w-11 h-7 rounded-full transition-colors flex items-center px-0.5"
+              style={{backgroundColor: locale==='en' ? '#6366f1' : '#22c55e'}}
+              aria-label="Toggle language">
+              <div className="w-6 h-6 rounded-full bg-white shadow flex items-center justify-center text-[10px] font-bold transition-all"
+                style={{marginLeft: locale==='en' ? 0 : 18, color: locale==='en' ? '#6366f1' : '#22c55e'}}>
+                {locale==='en' ? 'EN' : '中'}
+              </div>
             </button>
             <button onClick={() => setMobileOpen(!mobileOpen)}
               className="md:hidden w-9 h-9 rounded-xl bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-center transition-colors">

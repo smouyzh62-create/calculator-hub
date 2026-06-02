@@ -22,8 +22,20 @@ function AppContent() {
 
   const toggleTheme = useCallback(() => setTheme(p => p === 'dark' ? 'light' : 'dark'), []);
 
+  const [locale, setLocale] = useState<'en' | 'zh'>(() => {
+    if (typeof window === 'undefined') return 'en';
+    const stored = localStorage.getItem('hub-locale') as 'en' | 'zh' | null;
+    return stored === 'en' || stored === 'zh' ? stored : 'en';
+  });
+  const toggleLocale = useCallback(() => {
+    const next = locale === 'en' ? 'zh' : 'en';
+    setLocale(next);
+    localStorage.setItem('hub-locale', next);
+    window.dispatchEvent(new Event('localechange'));
+  }, [locale]);
+
   return (
-    <Layout theme={theme} toggleTheme={toggleTheme}>
+    <Layout theme={theme} toggleTheme={toggleTheme} locale={locale} toggleLocale={toggleLocale}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ad-calculator" element={<AdsensePage />} />
