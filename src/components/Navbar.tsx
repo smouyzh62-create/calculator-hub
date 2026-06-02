@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Calculator, Sun, Moon } from 'lucide-react';
 
 const navItems = [
-  { label: 'Finance', path: '/', icon: '\uD83D\uDCB0' },
+  { label: 'Finance', path: '/compound', icon: '\uD83D\uDCB0' },
   { label: 'Health', path: '/bmi', icon: '\uD83D\uDCAA' },
   { label: 'Marketing', path: '/seo', icon: '\uD83D\uDCCA' },
 ];

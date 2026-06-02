@@ -1,10 +1,16 @@
 import HelocApp from '../tools/heloc/App';
-import ToolPageHeader from '../components/ToolPageHeader';
+import { Link } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 
 export default function HelocPage() {
   return (
     <div>
-      <ToolPageHeader title="HELOC Calculator" emoji="\uD83C\uDFE0" />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-4 pb-2">
+        <Link to="/" className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+          <ArrowLeft className="w-3.5 h-3.5" />
+          Back to All Tools
+        </Link>
+      </div>
       <HelocApp />
     </div>
   );

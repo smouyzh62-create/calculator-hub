@@ -4,20 +4,10 @@ import type { Theme } from '../types';
 export function useTheme() {
   const [theme, setThemeState] = useState<Theme>(() => {
     if (typeof window === 'undefined') return 'light';
-    const stored = localStorage.getItem('compound-theme') as Theme | null;
-    if (stored === 'dark' || stored === 'light') return stored;
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    const stored = localStorage.getItem('hub-theme') as Theme | null;
+    return stored === 'dark' || stored === 'light' ? stored : window.matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
   });
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.classList.toggle('dark', theme === 'dark');
-    localStorage.setItem('compound-theme', theme);
-  }, [theme]);
-
-  const toggleTheme = useCallback(() => {
-    setThemeState(prev => (prev === 'dark' ? 'light' : 'dark'));
-  }, []);
-
+  useEffect(() => { document.documentElement.classList.toggle('dark', theme === 'dark'); localStorage.setItem('hub-theme', theme); }, [theme]);
+  const toggleTheme = useCallback(() => setThemeState(p => (p === 'dark' ? 'light' : 'dark')), []);
   return { theme, toggleTheme };
 }
