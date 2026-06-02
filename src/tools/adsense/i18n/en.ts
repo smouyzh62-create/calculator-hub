@@ -1,0 +1,28 @@
+﻿const en = {
+  title: "AdSense Revenue Calculator",
+  subtitle: "Google AdSense Earnings Estimator",
+  dailyPageViews: "Daily Page Views",
+  ctr: "Click-Through Rate (CTR)",
+  cpc: "Cost Per Click (CPC)",
+  daily: "Daily",
+  monthly: "Monthly",
+  yearly: "Yearly",
+  revenue: "Revenue",
+  expected: "Expected",
+  conservative: "Conservative",
+  optimistic: "Optimistic",
+  estimateRange: "Revenue Estimate Range",
+  revenueChart: "Revenue Comparison",
+  clicks: "Daily Clicks",
+  pageViews: "Page Views",
+  ctrLabel: "CTR",
+  cpcLabel: "CPC",
+  estimated: "Estimated",
+  lightMode: "Light Mode",
+  darkMode: "Dark Mode",
+  language: "Language",
+  reset: "Reset",
+  disclaimer: "This is an estimate for reference only. Actual earnings vary based on niche, traffic quality, ad placement, and seasonality.",
+};
+export default en;
+export type TranslationKeys = typeof en;

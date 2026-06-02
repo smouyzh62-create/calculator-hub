@@ -1,0 +1,31 @@
+﻿const en = {
+  title: 'Compound Interest Calculator',
+  subtitle: 'Dollar-Cost Averaging & Compounding',
+  initialInvestment: 'Initial Investment',
+  monthlyContribution: 'Monthly Contribution',
+  annualReturn: 'Annual Return',
+  timeHorizon: 'Time Horizon',
+  years: 'Years',
+  totalValue: 'Total Value',
+  totalPrincipal: 'Total Principal',
+  totalInterest: 'Total Interest',
+  principalLabel: 'Principal',
+  interestLabel: 'Interest',
+  growthChart: 'Growth Over Time',
+  yearlyBreakdown: 'Yearly Breakdown',
+  showBreakdown: 'Show Yearly Breakdown',
+  hideBreakdown: 'Hide Yearly Breakdown',
+  year: 'Year',
+  amount: 'Amount',
+  principalCol: 'Principal',
+  interestCol: 'Interest',
+  lightMode: 'Light Mode',
+  darkMode: 'Dark Mode',
+  controls: 'Parameters',
+  chart: 'Chart',
+  reset: 'Reset',
+  disclaimer: 'Projections are for illustrative purposes only. Past performance does not guarantee future results.',
+};
+
+export default en;
+export type TranslationKeys = typeof en;
