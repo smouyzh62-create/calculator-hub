@@ -9,6 +9,24 @@ export function detectLocale(): Locale {
   return 'en';
 }
 
+export function getT(locale: Locale): (key: string) => string {
+  return (key: string) => {
+    const keys = key.split('.');
+    let val: any = dict[locale];
+    for (const k of keys) { val = val?.[k]; if (val === undefined) break; }
+    if (typeof val === 'string') return val;
+    val = dict.en;
+    for (const k of keys) { val = val?.[k]; if (val === undefined) break; }
+    return typeof val === 'string' ? val : key;
+  };
+}
+
+export function t(key: string): string {
+  if (typeof window === 'undefined') return getT('en')(key);
+  const stored = localStorage.getItem('hub-locale') as Locale | null;
+  return getT(stored === 'zh' ? 'zh' : 'en')(key);
+}
+
 export function useTranslation() {
   const [locale, setLocale] = useState<Locale>('en');
 
@@ -22,15 +40,7 @@ export function useTranslation() {
     return () => window.removeEventListener('localechange', handler);
   }, []);
 
-  const t = useCallback((key: string): string => {
-    const keys = key.split('.');
-    let val: any = dict[locale];
-    for (const k of keys) { val = val?.[k]; if (val === undefined) break; }
-    if (typeof val === 'string') return val;
-    val = dict.en;
-    for (const k of keys) { val = val?.[k]; if (val === undefined) break; }
-    return typeof val === 'string' ? val : key;
-  }, [locale]);
+  const tr = useCallback((key: string): string => getT(locale)(key), [locale]);
 
   const toggleLocale = useCallback(() => {
     const next = locale === 'en' ? 'zh' : 'en';
@@ -39,5 +49,5 @@ export function useTranslation() {
     window.dispatchEvent(new Event('localechange'));
   }, [locale]);
 
-  return { locale, t, toggleLocale, setLocale };
+  return { locale, t: tr, toggleLocale, setLocale };
 }
