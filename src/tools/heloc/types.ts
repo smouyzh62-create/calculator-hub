@@ -1,4 +1,4 @@
-﻿export interface HelocInputs {
+export interface HelocInputs {
   homeValue: number;
   currentBalance: number;
   maxLtv: number;  // Max Loan-to-Value ratio (e.g. 80 = 80%)

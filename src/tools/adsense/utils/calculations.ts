@@ -1,4 +1,4 @@
-﻿import type { AdSenseInputs, AdSenseResults, RevenueBreakdown } from '../types';
+import type { AdSenseInputs, AdSenseResults, RevenueBreakdown } from '../types';
 
 /**
  * Calculate AdSense revenue estimates.

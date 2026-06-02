@@ -1,4 +1,4 @@
-﻿import type { HelocInputs, HelocResults } from '../types';
+import type { HelocInputs, HelocResults } from '../types';
 
 /**
  * Calculate HELOC-related metrics from home value, mortgage balance, and max LTV.

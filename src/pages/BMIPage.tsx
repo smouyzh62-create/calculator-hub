@@ -1,4 +1,4 @@
-﻿import BMIApp from '../tools/bmi/App';
+import BMIApp from '../tools/bmi/App';
 import ToolPageHeader from '../components/ToolPageHeader';
 
 export default function BMIPage() {

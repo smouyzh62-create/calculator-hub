@@ -1,4 +1,4 @@
-﻿export interface CompoundInputs {
+export interface CompoundInputs {
   initialInvestment: number;
   monthlyContribution: number;
   annualReturn: number;       // e.g. 8 = 8%

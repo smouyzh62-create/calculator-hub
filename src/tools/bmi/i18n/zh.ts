@@ -1,4 +1,4 @@
-﻿const zh: Record<string,string> = {
+const zh: Record<string,string> = {
   title: "BMI 与 TDEE 计算器",
   subtitle: "身体质量指数与每日热量消耗",
   weight: "体重",

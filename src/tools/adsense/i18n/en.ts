@@ -1,4 +1,4 @@
-﻿const en = {
+const en = {
   title: "AdSense Revenue Calculator",
   subtitle: "Google AdSense Earnings Estimator",
   dailyPageViews: "Daily Page Views",

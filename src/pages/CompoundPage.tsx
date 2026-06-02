@@ -1,4 +1,4 @@
-﻿import CompoundApp from '../tools/compound/App';
+import CompoundApp from '../tools/compound/App';
 import ToolPageHeader from '../components/ToolPageHeader';
 
 export default function CompoundPage() {

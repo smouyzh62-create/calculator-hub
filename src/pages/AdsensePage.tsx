@@ -1,4 +1,4 @@
-﻿import AdSenseApp from '../tools/adsense/App';
+import AdSenseApp from '../tools/adsense/App';
 import ToolPageHeader from '../components/ToolPageHeader';
 
 export default function AdSensePage() {

@@ -1,4 +1,4 @@
-﻿const en = {
+const en = {
   title: 'Compound Interest Calculator',
   subtitle: 'Dollar-Cost Averaging & Compounding',
   initialInvestment: 'Initial Investment',

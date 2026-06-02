@@ -1,4 +1,4 @@
-﻿const zh: Record<string, any> = {
+const zh: Record<string, any> = {
   title: "内容评分与 SEO 优化器",
   subtitle: "几秒内分析你的社交媒体文案的爆款潜力",
   input: "你的文案",

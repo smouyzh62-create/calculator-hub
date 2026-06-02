@@ -1,4 +1,4 @@
-﻿const en = {
+const en = {
   title: "BMI & TDEE Calculator",
   subtitle: "Body Mass Index & Daily Energy Expenditure",
   weight: "Weight",

@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import type { ScoreDimension } from '../types';
 
 interface Props { dimensions: ScoreDimension[]; t: (key: string) => string; }

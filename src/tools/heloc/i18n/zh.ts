@@ -1,4 +1,4 @@
-﻿const zh: Record<string, string> = {
+const zh: Record<string, string> = {
   title: '房屋净值贷款计算器',
   subtitle: '房屋净值信贷额度 (HELOC)',
   homeValue: '房屋价值',

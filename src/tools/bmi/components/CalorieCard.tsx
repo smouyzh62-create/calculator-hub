@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import type { BMIResults } from '../types';
 
 interface Props { label: string; desc: string; calories: number; color: string; t: (key: string) => string; }

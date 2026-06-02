@@ -1,4 +1,4 @@
-﻿export type Gender = 'male' | 'female';
+export type Gender = 'male' | 'female';
 export type ActivityLevel = 'sedentary' | 'light' | 'moderate' | 'heavy' | 'athlete';
 export type UnitSystem = 'metric' | 'imperial';
 export type Locale = 'en' | 'zh';

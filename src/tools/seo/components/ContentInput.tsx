@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Globe, FileText } from 'lucide-react';
 import { getPlatforms } from '../utils/analyzer';
 

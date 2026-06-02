@@ -1,4 +1,4 @@
-﻿import type { AnalysisInput, AnalysisResult, ScoreDimension, ScoreLevel } from '../types';
+import type { AnalysisInput, AnalysisResult, ScoreDimension, ScoreLevel } from '../types';
 
 // ============================================================
 // WORD LISTS — easily extensible for OpenAI API integration

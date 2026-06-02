@@ -1,4 +1,4 @@
-﻿import { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import type { Locale } from '../types';
 import en from './en';
 import zh from './zh';

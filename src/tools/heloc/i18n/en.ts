@@ -1,4 +1,4 @@
-﻿const en = {
+const en = {
   title: 'HELOC Calculator',
   subtitle: 'Home Equity Line of Credit',
   homeValue: 'Home Value',

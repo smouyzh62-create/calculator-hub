@@ -1,4 +1,4 @@
-﻿import type { CompoundInputs, YearlyData, CompoundResults } from '../types';
+import type { CompoundInputs, YearlyData, CompoundResults } from '../types';
 
 /**
  * Calculate compound interest with monthly contributions.

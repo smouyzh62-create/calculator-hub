@@ -1,4 +1,4 @@
-﻿import HelocApp from '../tools/heloc/App';
+import HelocApp from '../tools/heloc/App';
 import ToolPageHeader from '../components/ToolPageHeader';
 
 export default function HelocPage() {

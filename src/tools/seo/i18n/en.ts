@@ -1,4 +1,4 @@
-﻿const en = {
+const en = {
   title: "Content Score & SEO Optimizer",
   subtitle: "Analyze your social media copy's viral potential in seconds",
   input: "Your Content",

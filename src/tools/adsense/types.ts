@@ -1,4 +1,4 @@
-﻿export interface AdSenseInputs {
+export interface AdSenseInputs {
   dailyPageViews: number;
   ctr: number;           // e.g. 1.5 = 1.5%
   cpc: number;           // e.g. 0.35 = $0.35

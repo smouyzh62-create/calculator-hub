@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import type { Theme, Locale } from '../types';
 
 interface Props { theme: Theme; toggleTheme: () => void; t: (key: string) => string; locale: Locale; toggleLocale: () => void; }

@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import HeroSection from '../components/HeroSection';
 import ToolCard from '../components/ToolCard';
 import { Sparkles } from 'lucide-react';

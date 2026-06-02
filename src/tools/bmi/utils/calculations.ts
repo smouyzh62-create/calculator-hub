@@ -1,4 +1,4 @@
-﻿import type { BMIInputs, BMIResults, ActivityLevel, Gender } from '../types';
+import type { BMIInputs, BMIResults, ActivityLevel, Gender } from '../types';
 
 /**
  * Calculate BMI and TDEE using Mifflin-St Jeor formula.

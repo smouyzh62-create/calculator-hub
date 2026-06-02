@@ -1,4 +1,4 @@
-﻿import SEOApp from '../tools/seo/App';
+import SEOApp from '../tools/seo/App';
 import ToolPageHeader from '../components/ToolPageHeader';
 
 export default function SEOPage() {

@@ -1,4 +1,4 @@
-﻿import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { getBMIColor } from '../utils/calculations';
 
 interface Props { bmi: number; category: string; t: (key: string) => string; healthyMin: number; healthyMax: number; unit: string; }

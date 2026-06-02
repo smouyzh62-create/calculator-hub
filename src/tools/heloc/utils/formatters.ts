@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Format a number as currency (USD).
  */
 export function formatCurrency(value: number, locale = 'en-US'): string {

@@ -1,4 +1,4 @@
-﻿const zh: Record<string,string> = {
+const zh: Record<string,string> = {
   title: "AdSense 收益计算器",
   subtitle: "Google AdSense 收入估算工具",
   dailyPageViews: "日均网页浏览量",

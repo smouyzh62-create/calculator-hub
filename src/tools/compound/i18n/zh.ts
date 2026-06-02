@@ -1,4 +1,4 @@
-﻿const zh: Record<string, string> = {
+const zh: Record<string, string> = {
   title: '定投与复利计算器',
   subtitle: '定期定额投资与复利效应',
   initialInvestment: '初始投资金额',
