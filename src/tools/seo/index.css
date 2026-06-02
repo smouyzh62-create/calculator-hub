@@ -1,0 +1,9 @@
+  
+:root{--color-primary:#f43f5e;--color-primary-light:#fb7185}
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+textarea{resize:vertical}
+textarea:focus{outline:none}
+.tabular-nums{font-variant-numeric:tabular-nums}
+select{appearance:none;-webkit-appearance:none}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 20px rgba(244,63,94,0.2)}50%{box-shadow:0 0 40px rgba(244,63,94,0.4)}}
