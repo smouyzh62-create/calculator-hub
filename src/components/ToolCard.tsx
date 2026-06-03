@@ -2,9 +2,9 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
-interface Props { title: string; desc: string; icon: string; path: string; gradient: string; badge?: string; index: number; }
+interface Props { title: string; desc: string; icon: string; path: string; gradient: string; badge?: string; actionLabel?: string; index: number; }
 
-export default function ToolCard({ title, desc, icon, path, gradient, badge, index }: Props) {
+export default function ToolCard({ title, desc, icon, path, gradient, badge, actionLabel = 'Use Tool', index }: Props) {
   return (
     <motion.div initial={{opacity:0,y:20}} animate={{opacity:1,y:0}} transition={{duration:0.4,delay:index*0.1}}>
       <Link to={path} className='group block'>
@@ -17,7 +17,7 @@ export default function ToolCard({ title, desc, icon, path, gradient, badge, ind
             </div>
             <h3 className='text-base font-bold text-gray-900 dark:text-white mb-1.5 group-hover:text-indigo-600 transition-colors'>{title}</h3>
             <p className='text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4'>{desc}</p>
-            <div className='flex items-center gap-1 text-xs font-medium text-indigo-600 group-hover:gap-2 transition-all'><span>Use Tool</span><ArrowRight className='w-3.5 h-3.5' /></div>
+            <div className='flex items-center gap-1 text-xs font-medium text-indigo-600 group-hover:gap-2 transition-all'><span>{actionLabel}</span><ArrowRight className='w-3.5 h-3.5' /></div>
           </div>
         </div>
       </Link>

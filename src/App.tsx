@@ -17,20 +17,19 @@ function AppContent() {
   const toggleTheme = useCallback(() => setTheme(p => p === 'dark' ? 'light' : 'dark'), []);
 
   const [locale, setLocale] = useState<'en' | 'zh'>(() => {
-    const s = localStorage.getItem('hub-locale');
+    const s = localStorage.getItem('hub-home-locale');
     return s === 'en' || s === 'zh' ? s : 'en';
   });
   const toggleLocale = useCallback(() => {
     const next = locale === 'en' ? 'zh' : 'en';
     setLocale(next);
-    localStorage.setItem('hub-locale', next);
-    window.dispatchEvent(new Event('localechange'));
+    localStorage.setItem('hub-home-locale', next);
   }, [locale]);
 
   return (
     <Layout theme={theme} toggleTheme={toggleTheme} locale={locale} toggleLocale={toggleLocale}>
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<Home locale={locale} />} />
         <Route path='/ad-calculator' element={<AdsensePage />} />
         <Route path='/bmi' element={<BMIPage />} />
         <Route path='/compound' element={<CompoundPage />} />
