@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://calculator-hub-ix5b.vercel.app/sitemap.xml
+Sitemap: https://calculator-hub-ix5b.vercel.app/sitemap.txt
