@@ -36,9 +36,14 @@ const hub = {
       tools: 'Tools',
       legal: 'Legal',
       company: 'Company',
-      privacy: 'Privacy',
-      terms: 'Terms',
-      about: 'About',
+      compliance: 'Compliance',
+      privacy: 'Privacy Policy',
+      terms: 'Terms of Use',
+      about: 'About Us',
+    },
+    info: {
+      back: 'Back to Home',
+      updated: 'Last updated',
     },
   },
   zh: {
@@ -76,9 +81,14 @@ const hub = {
       tools: '工具',
       legal: '合规',
       company: '公司',
+      compliance: '合规',
       privacy: '隐私政策',
       terms: '使用条款',
       about: '关于我们',
+    },
+    info: {
+      back: '返回首页',
+      updated: '最后更新',
     },
   },
 } as const;

@@ -7,6 +7,10 @@ import BMIPage from './pages/BMIPage';
 import CompoundPage from './pages/CompoundPage';
 import HelocPage from './pages/HelocPage';
 import SEOPage from './pages/SEOPage';
+import AboutPage from './pages/AboutPage';
+import CompliancePage from './pages/CompliancePage';
+import PrivacyPage from './pages/PrivacyPage';
+import TermsPage from './pages/TermsPage';
 
 function AppContent() {
   const [theme, setTheme] = useState<'light' | 'dark'>(() => {
@@ -35,6 +39,10 @@ function AppContent() {
         <Route path='/compound' element={<CompoundPage />} />
         <Route path='/heloc' element={<HelocPage />} />
         <Route path='/seo' element={<SEOPage />} />
+        <Route path='/about' element={<AboutPage locale={locale} />} />
+        <Route path='/compliance' element={<CompliancePage locale={locale} />} />
+        <Route path='/privacy' element={<PrivacyPage locale={locale} />} />
+        <Route path='/terms' element={<TermsPage locale={locale} />} />
       </Routes>
     </Layout>
   );

@@ -37,15 +37,16 @@ export default function Footer({ locale }: Props) {
           <div>
             <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3'>{t('footer.legal')}</h4>
             <div className='space-y-2'>
-              <span className='block text-sm text-gray-500 cursor-default'>{t('footer.privacy')}</span>
-              <span className='block text-sm text-gray-500 cursor-default'>{t('footer.terms')}</span>
+              <Link to='/compliance' className='block text-sm text-gray-600 hover:text-indigo-600'>{t('footer.compliance')}</Link>
+              <Link to='/privacy' className='block text-sm text-gray-600 hover:text-indigo-600'>{t('footer.privacy')}</Link>
+              <Link to='/terms' className='block text-sm text-gray-600 hover:text-indigo-600'>{t('footer.terms')}</Link>
             </div>
           </div>
 
           <div>
             <h4 className='text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3'>{t('footer.company')}</h4>
             <div className='space-y-2'>
-              <span className='block text-sm text-gray-500 cursor-default'>{t('footer.about')}</span>
+              <Link to='/about' className='block text-sm text-gray-600 hover:text-indigo-600'>{t('footer.about')}</Link>
             </div>
           </div>
         </div>
@@ -55,4 +56,3 @@ export default function Footer({ locale }: Props) {
     </footer>
   );
 }
-
